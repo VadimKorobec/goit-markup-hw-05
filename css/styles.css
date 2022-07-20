@@ -669,7 +669,8 @@ a {
   position: relative;
 }
 
-.product-thumb.product-text:hover {
+.product-thumb:hover .product-text {
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -683,6 +684,8 @@ a {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+  transform: translateY(100%);
+  transition: 1000ms var(--timeng-function);
 }
 
 .portfolio-wrapper {
