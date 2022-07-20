@@ -133,11 +133,12 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: 250ms var(--timeng-function);
 }
 
-.nav-link:hover::after,
-.nav-link:focus::after {
-  opacity: 1;
+.nav-link:hover,
+.nav-link:focus {
   color: #2196f3;
 }
 
@@ -147,7 +148,6 @@ a {
 
 .nav-link::after {
   content: '';
-
   position: absolute;
   left: 0;
   bottom: 0;
@@ -159,7 +159,12 @@ a {
   border-radius: 2px;
 
   opacity: 0;
-  transition: opacity 250ms;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  opacity: 1;
+  color: #2196f3;
 }
 
 .header-list {
