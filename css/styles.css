@@ -203,6 +203,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: 250ms var(--timeng-function);
 }
 
 .mailto-wrapper:hover,
@@ -228,6 +230,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: 250ms var(--timeng-function);
 }
 
 .phone-wpapper:hover,
@@ -613,6 +617,8 @@ a {
   line-height: 1.62;
   border-radius: 4px;
   background-color: #f5f4fa;
+
+  transition: 250ms var(--timeng-function);
 }
 
 .button-portfolio.current {
