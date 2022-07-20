@@ -671,7 +671,7 @@ a {
 }
 
 .product-thumb:hover .product-text {
-  transform: translateY(10);
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -687,6 +687,7 @@ a {
   opacity: 0;
   transform: translateY(100%);
   transition: 250ms var(--timeng-function);
+  z-index: 100;
 }
 
 .portfolio-wrapper {
@@ -698,6 +699,7 @@ a {
   border: 1px solid #eeeeee;
   border-top: none;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .portfolio-titel {
