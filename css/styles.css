@@ -141,6 +141,12 @@ a {
   color: #2196f3;
 }
 
+.nav-link::after {
+  content: '';
+
+  display: block;
+}
+
 .header-list {
   display: flex;
   gap: 50px;
