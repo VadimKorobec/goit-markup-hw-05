@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts start-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!--Fonts end-->
+    <!--Normalize start-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -17,6 +20,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Normalize end-->
+    <!--Animate.css start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--animate.css end-->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
@@ -29,7 +39,9 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link current" href="./index.html">Студия</a>
+              <a class="nav-link current animate__animated animate__slideInDown" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./portfolio.html">Портфолио</a>
@@ -64,8 +76,16 @@
       <!--Hero section-->
       <section class="hero section section-wrap overlay">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
+          <h1 class="hero-title animate__animated animate__backInLeft">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button
+            class="button-hero animate__animated animate__backInRight"
+            type="button"
+            data-modal-open
+          >
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Offer section-->
@@ -73,7 +93,7 @@
         <div class="container">
           <h2 class="visually-hidden">Что мы предлагаем</h2>
           <ul class="offer-list">
-            <li class="offer-item">
+            <li class="offer-item animate__animated animate__backInLeft">
               <div class="offer-wrapper">
                 <svg class="offer-icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
@@ -84,7 +104,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="offer-item">
+            <li class="offer-item animate__animated animate__backInLeft">
               <div class="offer-wrapper">
                 <svg class="offer-icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
@@ -95,7 +115,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="offer-item">
+            <li class="offer-item animate__animated animate__backInLeft">
               <div class="offer-wrapper">
                 <svg class="offer-icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
@@ -106,7 +126,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="offer-item">
+            <li class="offer-item animate__animated animate__backInLeft">
               <div class="offer-wrapper">
                 <svg class="offer-icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -125,7 +145,7 @@
         <div class="container section-top">
           <h2 class="doing-title">Чем мы занимаемся</h2>
           <ul class="doing-list card-set">
-            <li class="doing-item">
+            <li class="doing-item animate__animated animate__backInRight">
               <div class="doing-tumb">
                 <img
                   src="./images/doing/box1.jpg"
@@ -136,7 +156,7 @@
                 <p class="doing-text">Десктопные приложения</p>
               </div>
             </li>
-            <li class="doing-item">
+            <li class="doing-item animate__animated animate__backInRight">
               <div class="doing-tumb">
                 <img
                   src="./images/doing/box2.jpg"
@@ -147,7 +167,7 @@
                 <p class="doing-text">Мобильные приложения</p>
               </div>
             </li>
-            <li class="doing-item">
+            <li class="doing-item animate__animated animate__backInRight">
               <div class="doing-tumb">
                 <img
                   src="./images/doing/box3.jpg"
@@ -172,7 +192,7 @@
                 <h3 class="team-subtitel">Игорь Демьяненко</h3>
                 <p class="team-text" lang="en">Product Designer</p>
                 <ul class="socials list">
-                  <li class="socials-item">
+                  <li class="socials-item animate__animated animate__backInLeft">
                     <a
                       class="socials-link"
                       href=""
@@ -184,7 +204,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="socials-item">
+                  <li class="socials-item animate__animated animate__backInLeft">
                     <a
                       class="socials-link"
                       href=""
@@ -197,7 +217,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="socials-item">
+                  <li class="socials-item animate__animated animate__backInLeft">
                     <a
                       class="socials-link"
                       href=""
