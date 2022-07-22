@@ -487,13 +487,13 @@ a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: 250ms var(--timeng-function);
+  transition: border-color var(--timeng-function), fill var(--timeng-function);
 }
 
 .clients-icon {
   fill: #afb1b8;
 
-  transition: 250ms var(--timeng-function);
+  transition: fill var(--timeng-function);
 }
 
 .clients-link:hover,
