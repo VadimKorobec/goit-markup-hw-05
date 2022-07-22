@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts start-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!--Fonts end-->
+    <!--Normalize start-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -17,6 +20,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Normalize end-->
+    <!--Animate.css start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Animate.css end-->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
@@ -31,7 +41,11 @@
               <a class="nav-link" href="./index.html">Студия</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+              <a
+                class="nav-link current animate__animated animate__slideInDown"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Контакты</a>
@@ -66,24 +80,37 @@
           <h1 class="visually-hidden">Кнопки</h1>
           <ul class="button-list">
             <li class="button-item">
-              <button class="button-portfolio current" type="button">Все</button>
+              <button
+                class="button-portfolio current animate__animated animate__backInLeft"
+                type="button"
+              >
+                Все
+              </button>
             </li>
             <li class="button-item">
-              <button class="button-portfolio" type="button">Веб-сайты</button>
+              <button class="button-portfolio animate__animated animate__backInLeft" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="button-item">
-              <button class="button-portfolio" type="button">Приложения</button>
+              <button class="button-portfolio animate__animated animate__backInLeft" type="button">
+                Приложения
+              </button>
             </li>
             <li class="button-item">
-              <button class="button-portfolio" type="button">Дизайн</button>
+              <button class="button-portfolio animate__animated animate__backInLeft" type="button">
+                Дизайн
+              </button>
             </li>
             <li class="button-item">
-              <button class="button-portfolio" type="button">Маркетинг</button>
+              <button class="button-portfolio animate__animated animate__backInLeft" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <h2 class="visually-hidden">Портфолио</h2>
           <ul class="portfolio-list card-set">
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInRight">
               <div class="product-thumb">
                 <img src="./images/portfolio/img1.jpg" alt="Ноутбук" width="370" height="294" />
                 <p class="product-text">
@@ -97,7 +124,7 @@
                 <p class="portfolio-text">Веб-сайт</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInRight">
               <div class="product-thumb">
                 <img src="./images/portfolio/img2.jpg" alt="Баскетбол" width="370" height="294" />
                 <p class="product-text">
@@ -111,7 +138,7 @@
                 <p class="portfolio-text">Дизайн</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInRight">
               <div class="product-thumb">
                 <img src="./images/portfolio/img3.jpg" alt="Рыба" width="370" height="294" />
                 <p class="product-text">
@@ -125,7 +152,7 @@
                 <p class="portfolio-text">Приложение</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInLeft">
               <div class="product-thumb">
                 <img src="./images/portfolio/img4.jpg" alt="Наушники" width="370" height="294" />
                 <p class="product-text">
@@ -139,7 +166,7 @@
                 <p class="portfolio-text">Маркетинг</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInLeft">
               <div class="product-thumb">
                 <img src="./images/portfolio/img5.jpg" alt="Две коробки" width="370" height="294" />
                 <p class="product-text">
@@ -153,7 +180,7 @@
                 <p class="portfolio-text">Приложение</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInLeft">
               <div class="product-thumb">
                 <img src="./images/portfolio/img6.jpg" alt="Монитор" width="370" height="294" />
                 <p class="product-text">
@@ -167,7 +194,7 @@
                 <p class="portfolio-text">Веб-сайт</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInRight">
               <div class="product-thumb">
                 <img src="./images/portfolio/img7.jpg" alt="Книга" width="370" height="294" />
                 <p class="product-text">
@@ -181,7 +208,7 @@
                 <p class="portfolio-text">Дизайн</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item animate__animated animate__backInRight">
               <div class="product-thumb">
                 <img src="./images/portfolio/img8.jpg" alt="Ярлык" width="370" height="294" />
                 <p class="product-text">
@@ -195,8 +222,8 @@
                 <p class="portfolio-text">Маркетинг</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="portfolio-item animate__animated animate__backInRight">
+              <div class="product-thumb ч">
                 <img
                   src="./images/portfolio/img9.jpg"
                   alt="Работа за ноутбуком"
