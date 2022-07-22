@@ -379,6 +379,28 @@ a {
   gap: var(--indent);
 }
 
+.doing-tumb {
+  position: relative;
+}
+
+.doing-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 370px;
+  height: 70px;
+  padding: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /* team section */
 
 .team {
@@ -663,6 +685,11 @@ a {
   transition: 250ms var(--timeng-function);
 }
 
+.portfolio-item:hover .product-thumb .product-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .portfolio-item:hover {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -674,16 +701,12 @@ a {
   overflow: hidden;
 }
 
-.product-thumb:hover .product-text {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .product-text {
   position: absolute;
   top: 0;
   left: 0;
   padding: 63px 24px;
+
   font-size: 18px;
   line-height: calc(28 / 18);
   color: #ffffff;
@@ -691,7 +714,6 @@ a {
   opacity: 0;
   transform: translateY(100%);
   transition: 250ms var(--timeng-function);
-  z-index: 100;
 }
 
 .portfolio-wrapper {
@@ -784,12 +806,18 @@ a {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--timeng-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop.is-hidden.modal {
+  transform: scale(1.1);
 }
 
 .modal {
@@ -800,6 +828,8 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transform: scale(1);
+  transition: transform 250ms var(--timeng-function);
 }
 
 .modal-btn {
