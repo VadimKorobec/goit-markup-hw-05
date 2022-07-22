@@ -810,7 +810,9 @@ a {
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--timeng-function);
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity var(--timeng-function), visibility var(--timeng-function);
 }
 
 .backdrop.is-hidden {
@@ -824,7 +826,7 @@ a {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   width: 528px;
   height: 521px;
   background-color: #ffffff;
