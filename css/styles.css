@@ -832,12 +832,12 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: transform var(--timeng-function) 200ms;
+  transition: transform var(--timeng-function), opacity var(--timeng-function);
 }
 
 .backdrop.is-hidden .modal {
   opacity: 0;
-  transform: translate(-50%, -50%) scale(0.85);
+  transform: translate(-50%, -50%) scale(0.75);
 }
 
 .modal-btn {
